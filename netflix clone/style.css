@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    color: #fff;
+
+}
+/* header part */
+.header{
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.4),rgba(0,0,0,1)),url(header-image.png);
+    background-size:auto;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content:  space-evenly;
+    margin-top: 20px;
+    
+}
+.logo1{
+    width: 10.5rem;
+    height: 3rem;
+    box-shadow:#000 ;
+    color: rgb(229,9,20);
+    fill: currentColor;
+    display: block;
+   margin-right: 900px;
+}
+.language{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    font-size: 17px;
+}
+button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 10px 23px;
+    font-size: 17px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.logo2{
+    width: 15px;
+    padding-left: 5px;
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 0px;
+}
+.header-content h1{
+    font-size: 3rem;
+    line-height: 70px;
+    font-weight: 900;
+    max-width: 890px;
+    
+}
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.email-sign{
+    background: #fff;
+    border-radius: 4px;
+    display:flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+    
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
+.email-sign input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+   
+
+}
+.email-sign button{
+    background: #db0001;
+    border: 0;
+    
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+    font-weight: 700;
+    font-size: 20px;
+    
+}
+/* 2nd position */
+.features{
+    padding: 40px 0%;
+    font-size: 22px;
+}
+.row
+{
+    border-top: 9px solid rgb(79, 75, 75);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 200px;
+
+}
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 10px;
+
+}
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.features h2{
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    margin-left:25px ;
+}
+/* faq */
+.faq{
+    padding: 40px 12%;
+    text-align: center;
+    font-size: 18px;
+    border-top: 9px solid rgb(79, 75, 75);
+}
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+.acordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 850px;
+
+}
+.acordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+    
+    
+}
+.acordion li label{
+    display:flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+
+}
+.label,.acordion li label:hover{
+    background: #454545;
+    
+}
+
+label::after{
+    content: '+';
+    font-size:34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input{
+    display: none;
+}
+.acordion .content {
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+
+.acordion input:checked+label+.content {
+    max-height: 600px;
+    padding: 40px 20px;
+
+}
+.acordion input:checked+label::after
+{
+    transform: rotate(45deg);
+}
+small{
+    font-size: 1.5rem;
+}
+
